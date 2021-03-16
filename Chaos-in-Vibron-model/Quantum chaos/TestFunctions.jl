@@ -11,7 +11,7 @@ include("ChaosIndicators.jl")
 #
 #   Plotting - ξ dependence of levels
 #
-
+#=
 Val_ξ = Float64[]
 spc=Float64[]
 N = 20
@@ -44,7 +44,7 @@ pyplot()
 PyPlot.pygui(true)
 heatmap(Hamiltonian_Nln(0.5,0.5,10),c = :balance, clim = (-10,10))
 
-
+=#
 
 
 #
@@ -99,4 +99,115 @@ plot(x_array,B_array,yerror=σ_array,title = "ξ = 0.5",label = "Brody",xlabel =
 plot!(x_array,η_array,label = "η")
 plot!(x_array,ξ_E_array,label = "ξ_E")
 #savefig("")
+=#
+
+#
+#   Plotting - vectors and spectrum
+#
+
+#=
+ξ = 0.05
+ϵ = 0.05
+
+N =  8#10
+
+Hamiltonian = Hamiltonian_Nln(ξ,ϵ,N)
+EigSystem = eigen(Hamiltonian)
+
+spectrum = EigSystem.values
+vectors = EigSystem.vectors
+
+println(length(spectrum))
+println(length(CutDegeneracy(spectrum)))
+
+plotly()
+#PyPlot.pygui(true)
+heatmap(vectors, c= :blues)
+scatter!(spectrum)
+scatter!(CutDegeneracy(spectrum),label = "cut")
+
+num = 0
+if N%2 == 0
+    
+    for j in 1:Int64(N/2)
+        plot!([i for i in 1:Int64((N+1)*(N+2)/2)],[num + j for i in 1:Int64((N+1)*(N+2)/2)],c = :black)
+        global num = num + j
+        plot!([i for i in 1:Int64((N+1)*(N+2)/2)],[num + j for i in 1:Int64((N+1)*(N+2)/2)],c = :black)
+        global num = num + j
+    end
+    
+    plot!([i for i in 1:Int64((N+1)*(N+2)/2)],[num + N/2+1 for i in 1:Int64((N+1)*(N+2)/2)],c = :black)
+
+end 
+Name_fig = "vectors0.05 0.05 8"
+savefig(Name_fig)
+=#
+
+
+
+#
+#
+#
+
+#=
+ξ = 0.5
+ϵ = 0.0
+
+Hamiltonian = Hamiltonian_Nnl(ξ,ϵ,20)
+EigSystem = eigen(Hamiltonian)
+
+spectrum = EigSystem.values
+vectors = EigSystem.vectors
+
+
+pyplot()
+PyPlot.pygui(true)
+heatmap(vectors, c= :blues)
+scatter!(spectrum)=#
+#=
+ξ = 0.05
+ϵ = 0.05
+
+N =  8#10
+
+Hamiltonian = Hamiltonian_Nln(ξ,ϵ,N)
+EigSystem = eigen(Hamiltonian)
+
+spectrum = EigSystem.values
+vectors = EigSystem.vectors
+v1 = vectors[:,37]
+v2 = vectors[:,38]
+len = length(v2)
+v3 = [v2[len - i+1] for i in 1:len]
+
+
+pyplot()
+PyPlot.pygui(true)
+scatter(v1,c=:red)
+scatter!(v2,c=:blue)
+plot!(v1,c=:red)
+plot!(v2,c=:blue)
+=#
+#=
+ξ = 0.05
+ϵ = 0.0
+
+N =  8#10
+
+Hamiltonian = Hamiltonian_Nln(ξ,ϵ,N)
+EigSystem = eigen(Hamiltonian)
+
+spectrum = EigSystem.values
+vectors = EigSystem.vectors
+v1 = vectors[:,37]
+v2 = vectors[:,38]
+len = length(v2)
+v3 = [v2[len - i+1] for i in 1:len]
+
+
+pyplot()
+PyPlot.pygui(true)
+scatter!(v1)
+scatter!(v3)
+
 =#

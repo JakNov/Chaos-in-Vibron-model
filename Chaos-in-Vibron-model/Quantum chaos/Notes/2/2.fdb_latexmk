@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1615759648 "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/2/2.tex" "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/2/2.pdf" "2" 1615759653
+["pdflatex"] 1615899342 "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/2/2.tex" "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/2/2.pdf" "2" 1615899345
   "/etc/texmf/web2c/texmf.cnf" 1595238467 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/2/2.aux" 1615759653 1370 8018c65a5ff8154c095bc4237c01e263 ""
-  "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/2/2.tex" 1615759646 3750 d08fc3b73d6fb749e547b806024768f6 ""
+  "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/2/2.aux" 1615899344 1370 8018c65a5ff8154c095bc4237c01e263 ""
+  "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/2/2.tex" 1615899340 4139 863abaa9be8651a3e29bb01d6481fa89 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -167,15 +167,15 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1583234869 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1605194259 4714583 ca1398de6d73743def7b7765c4ad4cda ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1595241158 7737268 799dd2b7b37c08d1ae2433ee58ab294c ""
-  "2.aux" 1615759653 1370 8018c65a5ff8154c095bc4237c01e263 ""
-  "2.tex" 1615759646 3750 d08fc3b73d6fb749e547b806024768f6 ""
+  "2.aux" 1615899344 1370 8018c65a5ff8154c095bc4237c01e263 ""
+  "2.tex" 1615899340 4139 863abaa9be8651a3e29bb01d6481fa89 ""
   "Deg.png" 1615748617 20587 55235dbaa0edc080e62c5a27c141010b ""
   "Deg2.png" 1615750673 19733 416cc62ff728a1110ae67536fde428d0 ""
   "Spc0.png" 1615735926 10162 17262c966a794f6a633f4014d4d16116 ""
   "Spc1.png" 1615735940 9483 584c7b08eadc94b6759526633a1eb5c1 ""
   (generated)
+  "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/2/2.pdf"
   "2.aux"
   "2.pdf"
-  "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/2/2.log"
   "2.log"
-  "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/2/2.pdf"
+  "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/2/2.log"
