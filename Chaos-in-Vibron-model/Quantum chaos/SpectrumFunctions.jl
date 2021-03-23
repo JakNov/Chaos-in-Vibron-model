@@ -27,6 +27,44 @@ using SparseArrays
      sqrt((N - n +1)*(n + l))
  end
 
+
+ #
+ #  Basis
+ #
+ function Basis_Nnl(N::Int64)
+    B1 = []
+    #D = Int((N + 1)*(N +2)/2) 
+    for n in 0:N
+        max = (n + 1)
+        for i in 1:max
+            append!(B1,[N,n,-n + (i-1)*2])
+        end
+    end
+
+    B1 = reshape(B1,(:,3))
+
+    return B1
+
+end
+
+function Basis_Nln(N::Int64)
+    B2 = []
+    #D = Int((N + 1)*(N +2)/2) 
+    for j in 1:2N+1
+        l = -N + j -1
+        n = abs(l)
+        while n <= N
+            append!(B2,[N,l,n])
+            n = n + 2
+        end
+    end
+
+    
+    B2 = reshape(B2,(3,:))
+    
+    return B2
+end
+
 #
 #   Hamiltonians in different basis
 #

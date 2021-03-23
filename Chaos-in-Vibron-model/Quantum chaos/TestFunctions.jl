@@ -211,3 +211,113 @@ scatter!(v1)
 scatter!(v3)
 
 =#
+#
+#   Plotting - Mean values - l, n
+#
+#
+
+#=
+ξ = 0.3
+ϵ = 0.0#01
+
+N =  75
+
+Hamiltonian = Hamiltonian_Nln(ξ,ϵ,N)
+EigSystem = eigen(Hamiltonian)
+
+spectrum = EigSystem.values
+vectors = EigSystem.vectors
+
+len =length(spectrum)
+amplitudes = vectors .* vectors
+l = []
+n = []
+
+Basis = Basis_Nln(N)
+
+for i in 1:len
+    append!(l,dot(amplitudes[:,i],Basis[2,:]))
+    append!(n,dot(amplitudes[:,i],Basis[3,:]))
+end
+#plotly()
+pyplot()
+PyPlot.pygui(true)
+title = @sprintf "Střední hodnoty vlastních stavů \n N=%3.0i ξ = %1.2f ϵ = %1.3f " N ξ ϵ
+p1 = scatter(spectrum,n, xlabel= "Energie", ylabel = "n", title = title, label = "<n>")
+p2 = scatter(spectrum,l, xlabel= "Energie", ylabel = "l", label = "<l>")
+
+plot(p1, p2, layout = (1,2))
+=#
+
+#
+#   NNspacing - l,n subspaces
+#
+
+#=
+N = 75
+ξ = 0.5
+ϵ = 0.0
+
+Hamiltonian = Hamiltonian_Nln(ξ,ϵ,N)
+EigSystem = eigen(Hamiltonian)
+spectrum = EigSystem.values
+vectors = EigSystem.vectors
+
+Basis = Basis_Nln(N)
+len = length(spectrum)
+
+SpectrumPositive_ln1 = Float64[]
+SpectrumPositive_ln2 = Float64[]
+
+SpectrumNegative_ln1 = Float64[]
+SpectrumNegative_ln2 = Float64[]
+
+for i in 1:len
+    
+    if Basis[2,i] >= 0 && Basis[3,i]%2 != 0
+        append!(SpectrumPositive_ln1, spectrum[i])
+    end
+    if Basis[2,i] >= 0 && Basis[3,i]%2 == 0
+        append!(SpectrumPositive_ln2, spectrum[i])
+    end
+
+    if Basis[2,i] <= 0 && Basis[3,i]%2 != 0
+        append!(SpectrumNegative_ln1, spectrum[i])
+    end
+
+    if Basis[2,i] <= 0 && Basis[3,i]%2 == 0
+        append!(SpectrumNegative_ln2, spectrum[i])
+    end
+end
+
+
+HistSpacing_ln1 = NND(SpectrumPositive_ln1)
+HistSpacing_ln2 = NND(SpectrumPositive_ln2)
+
+HistSpacing_nln1 = NND(SpectrumNegative_ln1)
+HistSpacing_nln2 = NND(SpectrumNegative_ln2)
+
+
+pyplot()
+#PyPlot.pygui(true)
+
+xdata = LinRange(0.0,5.0,100)
+P = Poisson.(xdata)
+
+p1 = plot(HistSpacing_ln1, label = "NNS",title = "Kladne l, n liche")
+p1 = plot!(xdata,P,label = "Poisson")
+p2 = plot(HistSpacing_ln2, label = "NNS",title = "Kladne l, n sude")
+p2 = plot!(xdata,P,label = "Poisson")
+p3 = plot(HistSpacing_nln1, label = "NNS",title = "Zaporne l, n liche")
+p3 = plot!(xdata,P,label = "Poisson")
+p4 = plot(HistSpacing_nln2, label = "NNS",title = "Zaporne l, n sude")
+p4 = plot!(xdata,P,label = "Poisson")
+p5 = plot(NND(spectrum), label = "NNS", title = "Spektrum")
+p5 = plot!(xdata,P,label = "Poisson")
+p6 = plot(spectrum)
+
+
+
+
+plot(p1, p2, p3, p4 ,p5 ,p6, layout = (2, 3), legend = false)
+=#
