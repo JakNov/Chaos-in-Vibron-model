@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{graphicx}
+\usepackage{ulem,amsmath,bm}
+\usepackage{amsmath}
+\def\baselinestretch{1}\normalsize 
+\usepackage{wrapfig}
+\usepackage{pgf,tikz} 
+\usepackage{dsfont}
+
+
+\usepackage[bottom]{footmisc}
+\usepackage{footnote}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage[total={17cm,25cm}, top=3cm, left=2.5cm, right=2.5cm, bottom = 2cm, includefoot]{geometry}
+
+
+\usepackage{braket}
+
+
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\begin{document}
+\begin{center}
+    \Large
+    \textbf{Poznámky}
+           
+    \vspace{0.4cm}
+    \small
+    \today
+\end{center}
+
+\section{OTOCs}
+Počítáme Out-of-Time-Ordered-Correlators $C(t)$ v limitě nekonečné teploty
+
+$$C(t) = \langle[\hat{W}(t),\hat{V}]^{\dagger}[\hat{W}(t),\hat{V}]\rangle, $$
+
+kde středování přes stavy je jen stopa, což odpovídá nekonečné teplotě
+
+$$\langle \hat{O} \rangle = \frac{1}{\text{Dim. Hilb. space}}\text{Tr}[\hat{O}].$$
+
+Výpočet provádíme ve tvaru (po rozepsání)
+$$C(t) = \frac{2}{D}(\text{Tr}[\hat{V} \hat{W}\, \hat{W} \hat{V} ] - \text{Tr}[\hat{W} \hat{V} \, \hat{W} \hat{V}]).$$
+
+\textcolor{red}{Zvláštní situace $C(t)_{VW} = C(t)_{WV}$.}
+
+\end{document}

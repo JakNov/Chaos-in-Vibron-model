@@ -41,7 +41,7 @@ using SparseArrays
         end
     end
 
-    B1 = reshape(B1,(:,3))
+    B1 = reshape(B1,(3,:))
 
     return B1
 
@@ -63,6 +63,96 @@ function Basis_Nln(N::Int64)
     B2 = reshape(B2,(3,:))
     
     return B2
+end
+
+
+#
+#   Operators in different basis
+#
+
+function n_Nnl(N::Int64)
+    Basis = Basis_Nnl(N)
+    n = convert(Array{Float64,1}, Basis[2,:])
+
+    return Diagonal(n)
+end
+
+function n_Nln(N::Int64)
+    Basis = Basis_Nln(N)
+    n = convert(Array{Float64,1}, Basis[3,:])
+
+    return Diagonal(n)
+end
+
+function W2_Nnl(N::Int64)
+    # |N n l> basis
+
+    Basis = Basis_Nnl(N)
+
+    D = Int((N + 1)*(N +2)/2) 
+
+    W2 = zeros(Float64,D,D)
+    for i in 1:D
+        n,l = Int64(Basis[2,i]),Int64(Basis[3,i])  
+        W2[i,i]= 1/2 * (P2(N,n+1,l-1)*M1(N,n,l) + P1(N,n-1,l-1)*M2(N,n,l) + M2(N,n+1,l+1)*P1(N,n,l) + M1(N,n-1,l+1)P2(N,n,l) +2*l^2)
+    
+        if n + 2 <= N 
+            W2[i,i+2*n+4]= 1/2 * (P1(N,n+1,l-1)*M1(N,n,l) + M1(N,n+1,l+1)*P1(N,n,l))
+            W2[i+2*n+4,i] = W2[i,i+2*n+4]
+        end
+    end
+
+    return W2
+end
+
+function W2_Nln(N::Int64)
+    # |N l n> basis
+
+    Basis = Basis_Nln(N)
+
+    D = Int((N + 1)*(N +2)/2) 
+
+    W2 = zeros(Float64,D,D)
+
+    for i in 1:D
+        l,n = Int64(Basis[2,i]),Int64(Basis[3,i])   
+        W2[i,i] = 1/2 * (P2(N,n+1,l-1)*M1(N,n,l) + P1(N,n-1,l-1)*M2(N,n,l) + M2(N,n+1,l+1)*P1(N,n,l) + M1(N,n-1,l+1)P2(N,n,l) +2*l^2)
+        
+    
+        if n+2 <=N
+            W2[i,i+1] = 1/2 * (P1(N,n+1,l-1)*M1(N,n,l) + M1(N,n+1,l+1)*P1(N,n,l))
+            W2[i+1,i] = W2[i,i+1]
+        end
+    
+    end
+    
+    return W2
+end
+
+function Dx_Nnl(N::Int64)
+    # |N n l> basis
+    Basis = Basis_Nnl(N)
+  
+
+    D = Int((N + 1)*(N +2)/2) 
+
+    Dx = zeros(Float64,D,D)
+    for i in 1:D
+        n,l = Int64(Basis[2,i]),Int64(Basis[3,i])  
+
+        if i + (n+2) <= D
+            Dx[i,i+ (n+2)]= P1(N,n,l)
+            Dx[i+ (n+2),i] = Dx[i,i+ (n+2)]
+        end
+    
+        if i + (n+1) <= D
+            Dx[i,i+ (n+1)] = M1(N,n,l)
+            Dx[i+ (n+1),i] = Dx[i,i+ (n+1)]
+        end
+    
+    end
+
+    return Dx
 end
 
 #
