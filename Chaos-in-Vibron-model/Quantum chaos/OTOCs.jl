@@ -86,7 +86,8 @@ function OTOCarray(ξ::Float64,ϵ::Float64,N::Int64; len::Int64 = 10000, basis::
         OTOCarray = Array{Float64,1}(undef, len)
 
         Threads.@threads for i in 1:len
-            OTOCarray[i] = real(OTOC(W_matrix,V_matrix,1.0*((i-1)/(50-1)),spectrum))
+            println(i)
+            OTOCarray[i] = real(OTOC(W_matrix,V_matrix,2*(i-1)/20,spectrum))
 
             #println("Point $i on thread $(Threads.threadid())")
 

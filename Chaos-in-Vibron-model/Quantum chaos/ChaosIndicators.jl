@@ -30,7 +30,10 @@ function NND(spectrum::Array{Float64}) # returns histogram of NND
     len = length(spectrum)
     xs = LinRange(1.0,len,len)
     f = polyfit(spectrum,xs,7)
+    
     spc_cut = spectrum[50:end-50]
+
+    #spc_cut = spectrum[50:end-50]
     
     unfolded = f.(spc_cut)
     unfolded_stretched = (unfolded .- unfolded[1]) / (unfolded[end] - unfolded[1]) * (length(unfolded) - 1)
@@ -46,7 +49,7 @@ function NND(spectrum::Array{Float64}) # returns histogram of NND
     end
 
 
-    nbins = 75
+    nbins = 25
     h_spacing = fit(Histogram,spacing,nbins = nbins)
     h_spacing = normalize(h_spacing, mode=:pdf)
 
