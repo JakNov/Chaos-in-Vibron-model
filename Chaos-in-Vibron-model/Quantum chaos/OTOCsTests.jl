@@ -8,7 +8,7 @@ using LinearAlgebra
 include("SpectrumFunctions.jl")
 include("OTOCs.jl")
 
-#=
+
 ξ = 0.001
 ϵ = 0.0
 N = 15
@@ -76,7 +76,7 @@ nameplot =  @sprintf "OTOC N=%3.0i ξ = %1.2f ϵ = %1.3f length = 5e4" N ξ ϵ
 
 savefig(nameplot)
 
-=#
+
 
 #
 #   Fast Fourier Transform
@@ -91,6 +91,13 @@ otoc_freqs = plot(freqs,abs.(F),label = "Frekvence")
 plot(otoc_plot, otoc_freqs, layout = 2)
 =#
 
+
+#
+#   Zatim nefunkcni
+#
+
+
+#=
 ξ = 0.0
 ϵ = 0.0
 N = 5
@@ -218,3 +225,4 @@ nameplot =  @sprintf "OTOC N=%3.0i ξ = %1.2f ϵ = %1.3f length = 5e2 Coperator"
 savefig(nameplot)
 
 
+=#
