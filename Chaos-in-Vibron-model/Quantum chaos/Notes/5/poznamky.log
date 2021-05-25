@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.20)  6 MAY 2021 23:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.20)  25 MAY 2021 15:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/jakub/Documents/BC/poznamky.tex
-(/home/jakub/Documents/BC/poznamky.tex
+**"/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.tex"
+(/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-02-25> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -468,7 +468,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count292
 \l__pdf_internal_box=\box62
-) (/home/jakub/Documents/BC/poznamky.aux)
+) (/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.aux)
 \openout1 = `poznamky.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -550,7 +550,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-/home/jakub/Documents/BC/poznamky.tex:55: Package amsmath Error: \begin{aligned} allowed only in math mode.
+/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.tex:55: Package amsmath Error: \begin{aligned} allowed only in math mode.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
@@ -561,7 +561,7 @@ l.55 \begin{aligned}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-/home/jakub/Documents/BC/poznamky.tex:55: Missing $ inserted.
+/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.tex:55: Missing $ inserted.
 <inserted text> 
                 $
 l.55 \begin{aligned}
@@ -569,7 +569,7 @@ l.55 \begin{aligned}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/home/jakub/Documents/BC/poznamky.tex:59: Missing $ inserted.
+/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.tex:59: Missing $ inserted.
 <inserted text> 
                 $
 l.59     \end{aligned}
@@ -581,7 +581,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/home/jakub/Documents/BC/poznamky.tex:67: Package amsmath Error: \begin{aligned} allowed only in math mode.
+/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.tex:67: Package amsmath Error: \begin{aligned} allowed only in math mode.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
@@ -592,7 +592,7 @@ l.67      \begin{aligned}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-/home/jakub/Documents/BC/poznamky.tex:67: Missing $ inserted.
+/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.tex:67: Missing $ inserted.
 <inserted text> 
                 $
 l.67      \begin{aligned}
@@ -600,7 +600,7 @@ l.67      \begin{aligned}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/home/jakub/Documents/BC/poznamky.tex:71: Missing $ inserted.
+/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.tex:71: Missing $ inserted.
 <inserted text> 
                 $
 l.71         \end{aligned}
@@ -612,7 +612,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/home/jakub/Documents/BC/poznamky.tex:75: Package amsmath Error: \begin{aligned} allowed only in math mode.
+/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.tex:75: Package amsmath Error: \begin{aligned} allowed only in math mode.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
@@ -623,7 +623,7 @@ l.75         \begin{aligned}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-/home/jakub/Documents/BC/poznamky.tex:75: Missing $ inserted.
+/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.tex:75: Missing $ inserted.
 <inserted text> 
                 $
 l.75         \begin{aligned}
@@ -631,7 +631,7 @@ l.75         \begin{aligned}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/home/jakub/Documents/BC/poznamky.tex:78: Missing $ inserted.
+/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.tex:78: Missing $ inserted.
 <inserted text> 
                 $
 l.78             \end{aligned}
@@ -644,7 +644,7 @@ my insertion and my current dilemma will both disappear.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/jakub/Documents/BC/space.pdf_tex
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space.pdf_tex
 <space.pdf, id=20, page=1, 510.10156pt x 323.40195pt>
 File: space.pdf Graphic file (type pdf)
 <use space.pdf, page 1>
@@ -655,10 +655,10 @@ File: space.pdf Graphic file (type pdf)
 <use space.pdf, page 2>
 Package pdftex.def Info: space.pdf , page2 used on input line 61.
 (pdftex.def)             Requested size: 284.52756pt x 180.38832pt.
-) [2 </home/jakub/Documents/BC/space.pdf> </home/jakub/Documents/BC/space.pdf
+) [2 </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space.pdf> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space.pdf
 
-pdfTeX warning: pdflatex (file /home/jakub/Documents/BC/space.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] (/home/jakub/Documents/BC/space2.pdf_tex
+pdfTeX warning: pdflatex (file /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf_tex
 <space2.pdf, id=27, page=1, 572.16808pt x 450.67587pt>
 File: space2.pdf Graphic file (type pdf)
 <use space2.pdf, page 1>
@@ -694,24 +694,24 @@ File: space2.pdf Graphic file (type pdf)
 <use space2.pdf, page 7>
 Package pdftex.def Info: space2.pdf , page7 used on input line 70.
 (pdftex.def)             Requested size: 284.52756pt x 224.11331pt.
-) [3] [4 </home/jakub/Documents/BC/space2.pdf> </home/jakub/Documents/BC/space2.pdf
+) [3] [4 </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
 
-pdfTeX warning: pdflatex (file /home/jakub/Documents/BC/space2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> </home/jakub/Documents/BC/space2.pdf
+pdfTeX warning: pdflatex (file /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
 
-pdfTeX warning: pdflatex (file /home/jakub/Documents/BC/space2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> </home/jakub/Documents/BC/space2.pdf
+pdfTeX warning: pdflatex (file /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
 
-pdfTeX warning: pdflatex (file /home/jakub/Documents/BC/space2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> </home/jakub/Documents/BC/space2.pdf
+pdfTeX warning: pdflatex (file /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
 
-pdfTeX warning: pdflatex (file /home/jakub/Documents/BC/space2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> </home/jakub/Documents/BC/space2.pdf
+pdfTeX warning: pdflatex (file /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
 
-pdfTeX warning: pdflatex (file /home/jakub/Documents/BC/space2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> </home/jakub/Documents/BC/space2.pdf
+pdfTeX warning: pdflatex (file /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
 
-pdfTeX warning: pdflatex (file /home/jakub/Documents/BC/space2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <ham.png, id=51, 433.62pt x 304.2567pt>
 File: ham.png Graphic file (type png)
@@ -723,20 +723,26 @@ Overfull \hbox (35.76909pt too wide) detected at line 307
 [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 S[]S[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 SU[]U[]S[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 SU[]U[]S[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 SUU[][]U[]U[]S[]
  []
 
-[6 </home/jakub/Documents/BC/ham.png>] (/home/jakub/Documents/BC/poznamky.aux) ) 
+[6 </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/ham.png>]
+<Figure_1.png, id=63, 784.8522pt x 375.804pt>
+File: Figure_1.png Graphic file (type png)
+<use Figure_1.png>
+Package pdftex.def Info: Figure_1.png  used on input line 347.
+(pdftex.def)             Requested size: 455.23856pt x 199.16943pt.
+ [7 </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/Figure_1.png>] (/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.aux) ) 
 Here is how much of TeX's memory you used:
- 16203 strings out of 482050
- 306616 string characters out of 5934590
+ 16209 strings out of 482050
+ 307320 string characters out of 5934590
  547852 words of memory out of 5000000
- 31219 multiletter control sequences out of 15000+600000
+ 31224 multiletter control sequences out of 15000+600000
  541448 words of font info for 60 fonts, out of 8000000 for 9000
  473 hyphenation exceptions out of 8191
- 52i,17n,56p,432b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on /home/jakub/Documents/BC/poznamky.pdf (6 pages, 184654 bytes).
+ 52i,17n,56p,481b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.pdf" (7 pages, 212865 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 117 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

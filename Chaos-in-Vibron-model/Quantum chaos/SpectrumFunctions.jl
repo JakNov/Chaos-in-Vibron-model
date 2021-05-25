@@ -106,6 +106,89 @@ function BasisList_Nln(N::Int64)
     return B2
 end
 
+function BaisiListlml(N::Int64) 
+
+    B1 =  BasisList_Nln(N)
+    Blml = []
+       
+
+    D = Int((N + 1)*(N +2)/2)
+
+    num = 0.0
+    int = 0.0
+
+    if N%2 ==0
+        global num = D - (N/2 + 1)
+        global int = (N/2 + 1)
+    else
+        global num = D - ((N-1)/2 + 1)
+        global int = ((N-1)/2 + 1)
+    end
+
+
+    # plus prostor
+
+    for i in 1:Int(num/2 + int)
+
+       push!(Blml, [N,B1[i][2],-B1[i][3]]) # N n l v bazi Nln
+
+    end
+
+    #minus prostor
+    for i in Int(num/2 + int):D-1
+        push!(Blml, [N,B1[1+i-Int(num/2 + int)][2],B1[1+i-Int(num/2 + int)][3]]) # N n l v bazi Nln
+    end
+
+    return Blml
+
+end
+
+
+function TrMalmlTolmlReordered(N::Int64)
+
+    #B1 =  BasisList_Nln(N)
+    Blml = BaisiListlml(N)
+
+    D = Int((N + 1)*(N +2)/2)
+
+    TransitionMatrix = zeros(Float64,D,D)
+
+    num = 0.0
+    int = 0.0
+
+    if N%2 ==0
+        global num = D - (N/2 + 1)
+        global int = (N/2 + 1)
+    else
+        global num = D - ((N-1)/2 + 1)
+        global int = ((N-1)/2 + 1)
+    end
+
+
+
+    for i in 1:Int(num/2)
+        if abs(Blml[i][2])%2 == 1
+            ind = findfirst(x -> x == [N,Blml[i][2],-Blml[i][3]],Blml) # N n l v bazi Nln
+            TransitionMatrix[ind,i] = 1
+            TransitionMatrix[i,ind] = 1
+
+        else 
+            TransitionMatrix[i,i] = 1
+        end
+    end
+
+    for i in Int(num/2)+1:D
+        if abs(Blml[i][2])%2 == 0
+            TransitionMatrix[i,i] = 1
+        end
+
+    end
+
+
+    return TransitionMatrix
+
+end
+
 function TrMaNnlToNln(N::Int64)
 
     B1 =  BasisList_Nnl(N)
@@ -156,8 +239,8 @@ function TrMaNlnTolml(N::Int64)
 
         TransitionMatrix[ind,i] = 1.0/sqrt(2)
 
-        TransitionMatrix[i,D-Int(num/2) + i] = 1.0/sqrt(2)
-        TransitionMatrix[ind,D-Int(num/2) + i] = -1.0/sqrt(2)
+        TransitionMatrix[i,D-Int(num/2) + i] = -1.0/sqrt(2)
+        TransitionMatrix[ind,D-Int(num/2) + i] = 1.0/sqrt(2)
     end
 
     for i in Int(num/2 + 1): Int(num/2 + int)

@@ -292,7 +292,7 @@ Operátory $\hat{D}_{x,y}$ a $\hat{R}_{x,y}$ tak skutečně narušují degenerac
 
 
     Hamiltonián $\hat{H}_R$ je blokově diagonální v bázi 
-    $$\{\ket{Nnl},\ket{Nn-l},\ket{Nn0}\} \rightarrow \{\frac{1}{\sqrt{2}}(\ket{Nnl} + \ket{Nn-l}),\frac{1}{\sqrt{2}}(\ket{Nnl} - \ket{Nn-l}),\ket{Nn0}\}.$$
+    $$\{\ket{Nnl},\ket{Nn-l}\} \rightarrow \{\frac{1}{\sqrt{2}}(\ket{Nnl} + \ket{Nn-l}),\frac{1}{\sqrt{2}}(\ket{Nnl} - \ket{Nn-l})\}.$$
     
     \begin{center}
         \includegraphics[width=8cm, height=7cm]{ham.png}
@@ -310,7 +310,47 @@ Tedy
 $$\hat{H}_D^{(\text{blokově diagonální})} = U U_D^{-1} \hat{H}_D^{(Nnl)}U_D U^{-1}.$$
 
 Vibronový hamiltonián je tak blokově diagonální v bázi $U_D U^{-1}$ (její podoba je závislá na parametrech hamiltoniánu).
-    \section{Závěr}
+   
+\subsection{Blokově diagonální $\hat{H}_D$}
+
+Bázi $\{\ket{n l} \pm \ket{n-l}\}$ označíme jako $\ket{nl\pm}$. Působení interakčních operátorů je
+
+\begin{align*}
+    \hat{R}_x \ket{nl\pm} =&
+\frac{1}{\sqrt{2}}\bigg[
+\sigma \bigg(\sqrt{\frac{n + j}{2} + 1} \ket{(n+1) (l+1) \pm} - \sqrt{\frac{n - j}{2} + 1} \ket{(n+1) (l-1) \pm}\bigg)  \\
+ &+\sigma^{\dagger} \bigg(\sqrt{\frac{n + j}{2}} \ket{(n-1) (l-1) \pm} - \sqrt{\frac{n - j}{2}} \ket{(n-1) (l+1) \pm}\bigg)   
+\bigg]
+\end{align*}
+
+\begin{align*}
+    \hat{D}_x \ket{nl\pm} =&
+\frac{1}{\sqrt{2}}\bigg[
+\sigma \bigg(\sqrt{\frac{n + j}{2} + 1} \ket{(n+1) (l+1) \mp} - \sqrt{\frac{n - j}{2} + 1} \ket{(n+1) (l-1) \mp}\bigg)  \\
+ &+\sigma^{\dagger} \bigg(\sqrt{\frac{n + j}{2}} \ket{(n-1) (l-1) \mp} - \sqrt{\frac{n - j}{2}} \ket{(n-1) (l+1) \mp}\bigg)   
+\bigg]
+\end{align*}
+
+Operátor $\hat{R}_x$ tedy nemíchá kladný $\ket{nl+}$ a záporný podprostor $\ket{nl-}$, zatímco $\hat{D}_x$ ano. 
+
+Kvantová čísla $n$ $l$, která číslují
+stavy $\ket{Nnl}$, mohou být ve stavu obě sudá, nebo obě lichá. Pokud alternování sudosti a lichosti spojíme
+s alternováním znaménka $\pm$ stavu  $\ket{nl\pm}$, dostaneme invariantní podprostory pro operátor 
+$\hat{D}_x$.
+
+Operátor $\hat{D}_x$ je tedy blokově diagonální ve stejné bázi, jen musíme vektory přeuspořádat.
+Operátor $\hat{D}_x$ je blokově diagonální v podprostorech  
+$$\text{1. podprostor} = \{\ket{nl+}_{\text{n,l - sudé}}, \ket{nl-}_{\text{n,l - liché}}\}$$
+$$\text{2. podprostor} = \{\ket{nl+}_{\text{n,l - liché}}, \ket{nl-}_{\text{n,l - sudé}}\}$$
+
+\begin{center}
+    \includegraphics[width=16cm, height=7cm]{Figure_1.png}
+\end{center}
+
+Vidíme, že první podprostor je větší, protože obsahuje stavy $\ket{Nnl = 0}$ - odpovídají sudému $l$ a $\ket{l} + \ket{-l}$. Pokud
+bychom je odebrali, oba bloky vypadají identicky.
+
+\section{Závěr}
     Operátory $\hat{D}_{x,y}$ a $\hat{R}_{x,y}$ ruší degeneraci spektra a hamiltoniány $H_D$ (Iachello) a $H_R$ (Bose-Einsteinův kondenzát)
     mají stejná spektra, ale odlišné vlastní báze. 
      \end{document}

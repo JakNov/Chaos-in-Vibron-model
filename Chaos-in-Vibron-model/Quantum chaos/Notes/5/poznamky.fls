@@ -1,10 +1,10 @@
-PWD /home/jakub/Documents/BC
+PWD /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/jakub/Documents/BC/poznamky.tex
-OUTPUT /home/jakub/Documents/BC/poznamky.log
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.tex
+OUTPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -187,9 +187,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT /home/jakub/Documents/BC/poznamky.aux
-INPUT /home/jakub/Documents/BC/poznamky.aux
-OUTPUT /home/jakub/Documents/BC/poznamky.aux
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.aux
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.aux
+OUTPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -237,49 +237,53 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-OUTPUT /home/jakub/Documents/BC/poznamky.pdf
+OUTPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /home/jakub/Documents/BC/space.pdf_tex
-INPUT /home/jakub/Documents/BC/space.pdf_tex
-INPUT /home/jakub/Documents/BC/space.pdf
-INPUT /home/jakub/Documents/BC/space.pdf
-INPUT /home/jakub/Documents/BC/space.pdf
-INPUT /home/jakub/Documents/BC/space.pdf
-INPUT /home/jakub/Documents/BC/space.pdf
-INPUT /home/jakub/Documents/BC/space.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf_tex
-INPUT /home/jakub/Documents/BC/space2.pdf_tex
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/space2.pdf
-INPUT /home/jakub/Documents/BC/ham.png
-INPUT /home/jakub/Documents/BC/ham.png
-INPUT /home/jakub/Documents/BC/ham.png
-INPUT /home/jakub/Documents/BC/poznamky.aux
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space.pdf_tex
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space.pdf_tex
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf_tex
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf_tex
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/space2.pdf
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/ham.png
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/ham.png
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/ham.png
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/Figure_1.png
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/Figure_1.png
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/Figure_1.png
+INPUT /home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/5/poznamky.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
