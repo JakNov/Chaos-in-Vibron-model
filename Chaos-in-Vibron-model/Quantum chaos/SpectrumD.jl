@@ -9,25 +9,20 @@ include("ChaosIndicators.jl")
 include("OTOCs.jl")
 
 
-N = 50
+N = 10
 ξ = 0.2
-ϵ = 0.0
+ϵ = 0.2
 
 D =Int((N+1)*(N+2)/2)
 Num_0 = Int((N - N%2)/2 + 1)
 
-S = TrMaNlnTolml(N)
+U1 = TrMaNlnTolml(N)
+U2 = TrMalmlTolmlReordered(N)
 
 Hr = HamiltonianR_Nln(ξ,ϵ,N)
 Hd = Hamiltonian_Nln(ξ,ϵ,N)
 
-
-
-Ud = eigen(Hd).vectors
-U = eigen(inv(S)*Hr*S).vectors
-Udd = Ud*inv(U)
-
-BlokDiagonalHamiltonianD = inv(Udd)*Hd*Udd
+BlokDiagonalHamiltonianD = inv(U1*U2)*Hd*U1*U2
 
 BlokDiagonalHamiltonianD1 = BlokDiagonalHamiltonianD[1:Int((D - Num_0)/2) + Num_0,1:Int((D - Num_0)/2) + Num_0]
 BlokDiagonalHamiltonianD2 = BlokDiagonalHamiltonianD[Int((D - Num_0)/2) + Num_0 + 1:end,Int((D - Num_0)/2) + Num_0 + 1:end]
@@ -74,10 +69,11 @@ println(b2)
     # OTOCy v bázi, ve které je hamiltonián blokově diagonální
     #
     
-    TrM = TrMaNnlToNln(N)
+    TrM = U1*U2
+    S = TrMaNnlToNln(N)
 
-    W = inv(Udd)*inv(TrM)*W2_Nnl(N)*TrM*Udd #blokove diagonalni baze
-    V = inv(Udd)*n_Nln(N)*Udd
+    W = inv(TrM)*inv(S)*W2_Nnl(N)*S*TrM #blokove diagonalni baze
+    V = inv(TrM)*n_Nln(N)*TrM
 
 
 
@@ -87,7 +83,18 @@ println(b2)
 
     V1 = V[1:Int((D - Num_0)/2) + Num_0,1:Int((D - Num_0)/2) + Num_0]
     V2 = V[Int((D - Num_0)/2) + Num_0 + 1:end,Int((D - Num_0)/2) + Num_0 + 1:end]
-    
+
+
+    #=
+    pyplot()
+    PyPlot.pygui(true)
+    p1 = heatmap(W1)
+    p2 = heatmap(W2)
+    p3 = heatmap(V1)
+    p4 = heatmap(V2)
+    plot(p1,p2,p3,p4)
+    =#
+
     S1 = system1.vectors
     S2 = system2.vectors
 
@@ -103,13 +110,23 @@ println(b2)
 
 
     system = eigen(BlokDiagonalHamiltonianD)
-    #Ss = system.vectors
+    EigenVectors = system.vectors
+
+    Subspace1,Subspace2 = HdNlnSubspaces(N)
 
     W_matrix = inv(M)*W*M
     V_matrix = inv(M)*V*M
+
+    for i in 1:D
+       c1,c2 = VectorProjectionsNln(TrM*EigenVectors[1:end,i],N)
+       d = max(c1,c2)
+       if d < 0.999
+            println(d)
+       end
+    end
     
-      
-    len = 1000
+    
+    len = 5000
 
     OTOCarray1 = Array{Float64,1}(undef, len)
     OTOCarray2 = Array{Float64,1}(undef, len)
@@ -138,6 +155,4 @@ println(b2)
     plot!(OTOCarrayWhole)
     plot!(OTOCarray1 + OTOCarray2)
    # plot!(OTOCarrayWhole2)
-
-
 

@@ -153,7 +153,7 @@ function TrMalmlTolmlReordered(N::Int64)
 
     TransitionMatrix = zeros(Float64,D,D)
 
-    num = 0.0
+    num = 0.0 #length of first subspace
     int = 0.0
 
     if N%2 ==0
@@ -207,6 +207,7 @@ function TrMaNnlToNln(N::Int64)
     return TransitionMatrix
 
 end
+
 
 function TrMaNlnTolml(N::Int64)
 
@@ -824,4 +825,49 @@ function Sparse_Nln(ξ::Float64,ϵ::Float64,N::Int64)
     end
 
     return sparse(I2,J2,V2)
+end
+
+#
+#
+#   Subspaces
+#
+#
+
+function HdNlnSubspaces(N::Int64)
+
+    U1 = TrMaNlnTolml(N)
+    U2 = TrMalmlTolmlReordered(N)
+
+    TrMatrix = U1*U2
+   # Vectors = inv(TrMatrix)
+
+    D = Int((N + 1)*(N +2)/2)
+
+    num = 0.0 #length of first subspace
+    int = 0.0 
+
+    if N%2 ==0
+        global num = D - (N/2 + 1)
+        global int = (N/2 + 1)
+    else
+        global num = D - ((N-1)/2 + 1)
+        global int = ((N-1)/2 + 1)
+    end
+
+    Subspace1 = TrMatrix[1:end,1:Int(num/2 + int)]   #plus prostor
+    Subspace2 = TrMatrix[1:end,Int(num/2 + int)+1:end]   #minus prostor
+
+
+
+    return Subspace1,Subspace2
+
+
+end
+
+function VectorProjectionsNln(vec,N::Int64)
+
+    Subspace1,Subspace2 = HdNlnSubspaces(N)
+    c1,c2 = vec'*Subspace1,vec'*Subspace2
+
+    return c1*c1',c2*c2'
 end
