@@ -1,0 +1,758 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.20)  23 SEP 2021 21:29
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/poznamky.tex"
+(/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/poznamky.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-02-25> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/28 3.41 The Babel package
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/28 3.41 Babel switching mechanism
+) (/usr/share/texlive/texmf-dist/tex/generic/babel-czech/czech.ldf
+Language: czech 2008/07/06 v3.1a Czech support from the babel system
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/28 3.41 Babel common definitions
+\babel@savecnt=\count175
+\U@D=\dimen135
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count176
+)
+Package babel Info: Making " an active character on input line 172.
+\cs@wordlen=\count177
+Package babel Info: Making - an active character on input line 226.
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
+) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks18
+\thm@bodyfont=\toks19
+\thm@headfont=\toks20
+\thm@notefont=\toks21
+\thm@headpunct=\toks22
+\thm@preskip=\skip49
+\thm@postskip=\skip50
+\thm@headsep=\skip51
+\dth@everypar=\toks23
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks24
+\ex@=\dimen138
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen139
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count178
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count179
+\leftroot@=\count180
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count181
+\DOTSCASE@=\count182
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen140
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count183
+\c@MaxMatrixCols=\count184
+\dotsspace@=\muskip16
+\c@parentequation=\count185
+\dspbrk@lvl=\count186
+\tag@help=\toks25
+\row@=\count187
+\column@=\count188
+\maxfields@=\count189
+\andhelp@=\toks26
+\eqnshift@=\dimen141
+\alignsep@=\dimen142
+\tagshift@=\dimen143
+\tagwidth@=\dimen144
+\totwidth@=\dimen145
+\lineht@=\dimen146
+\@envbody=\toks27
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks28
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen147
+\WF@size=\dimen148
+\c@WF@wrappedlines=\count190
+\WF@box=\box47
+\WF@everypar=\toks29
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen149
+\pgfutil@tempdimb=\dimen150
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box48
+ (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen151
+\pgf@y=\dimen152
+\pgf@xa=\dimen153
+\pgf@ya=\dimen154
+\pgf@xb=\dimen155
+\pgf@yb=\dimen156
+\pgf@xc=\dimen157
+\pgf@yc=\dimen158
+\pgf@xd=\dimen159
+\pgf@yd=\dimen160
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count191
+\c@pgf@countb=\count192
+\c@pgf@countc=\count193
+\c@pgf@countd=\count194
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count195
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count196
+\pgfsyssoftpath@bigbuffer@items=\count197
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen161
+\pgfmath@count=\count198
+\pgfmath@box=\box49
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count199
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen162
+\pgf@picmaxx=\dimen163
+\pgf@picminy=\dimen164
+\pgf@picmaxy=\dimen165
+\pgf@pathminx=\dimen166
+\pgf@pathmaxx=\dimen167
+\pgf@pathminy=\dimen168
+\pgf@pathmaxy=\dimen169
+\pgf@xx=\dimen170
+\pgf@xy=\dimen171
+\pgf@yx=\dimen172
+\pgf@yy=\dimen173
+\pgf@zx=\dimen174
+\pgf@zy=\dimen175
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen176
+\pgf@path@lasty=\dimen177
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen178
+\pgf@shorten@start@additional=\dimen179
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box50
+\pgf@hbox=\box51
+\pgf@layerbox@main=\box52
+\pgf@picture@serial@count=\count266
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen180
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen181
+\pgf@pt@y=\dimen182
+\pgf@pt@temp=\dimen183
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen184
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen185
+\pgf@sys@shading@range@num=\count267
+\pgf@shadingcount=\count268
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box53
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box54
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen186
+\pgf@nodesepend=\dimen187
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen188
+\pgffor@skip=\dimen189
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count269
+\pgfplotmarksize=\dimen190
+)
+\tikz@lastx=\dimen191
+\tikz@lasty=\dimen192
+\tikz@lastxsaved=\dimen193
+\tikz@lastysaved=\dimen194
+\tikz@lastmovetox=\dimen195
+\tikz@lastmovetoy=\dimen196
+\tikzleveldistance=\dimen197
+\tikzsiblingdistance=\dimen198
+\tikz@figbox=\box55
+\tikz@figbox@bg=\box56
+\tikz@tempbox=\box57
+\tikz@tempbox@bg=\box58
+\tikztreelevel=\count270
+\tikznumberofchildren=\count271
+\tikznumberofcurrentchild=\count272
+\tikz@fig@count=\count273
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count274
+\pgfmatrixcurrentcolumn=\count275
+\pgf@matrix@numberofcolumns=\count276
+)
+\tikz@expandcount=\count277
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))) (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+) (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks42
+\footnotemargin=\dimen199
+\c@pp@next@reset=\count278
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
+) (/usr/share/texlive/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box59
+\fn@width=\dimen256
+) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count279
+\float@exts=\toks43
+\float@box=\box60
+\@float@everytoks=\toks44
+\@floatcapt=\box61
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen257
+\captionmargin@=\dimen258
+\captionwidth=\dimen259
+\caption@tempdima=\dimen260
+\caption@indent=\dimen261
+\caption@parindent=\dimen262
+\caption@hangindent=\dimen263
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count280
+\c@continuedfloat=\count281
+Package caption Info: float package is loaded.
+Package caption Info: wrapfig package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+\c@subfigure=\count282
+\c@subtable=\count283
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip55
+\multirow@cntb=\count284
+\multirow@dima=\skip56
+\bigstrutjot=\dimen264
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+\Gm@cnth=\count285
+\Gm@cntv=\count286
+\c@Gm@tempcnt=\count287
+\Gm@bindingoffset=\dimen265
+\Gm@wd@mp=\dimen266
+\Gm@odd@mp=\dimen267
+\Gm@even@mp=\dimen268
+\Gm@layoutwidth=\dimen269
+\Gm@layoutheight=\dimen270
+\Gm@layouthoffset=\dimen271
+\Gm@layoutvoffset=\dimen272
+\Gm@dimlist=\toks45
+
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (483.69684pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (711.3189pt) is ignored.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip57
+\L@UnitsRaiseTextstyle=\skip58
+\L@UnitsRaiseScriptstyle=\skip59
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)) (/usr/share/texlive/texmf-dist/tex/latex/braket/braket.sty) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/centernot.sty
+Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count288
+\calc@Bcount=\count289
+\calc@Adimen=\dimen273
+\calc@Bdimen=\dimen274
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count290
+\calc@Cskip=\skip62
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count291
+\l_MT_multwidth_dim=\dimen275
+\origjot=\skip63
+\l_MT_shortvdotswithinadjustabove_dim=\dimen276
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen277
+\l_MT_above_intertext_sep=\dimen278
+\l_MT_below_intertext_sep=\dimen279
+\l_MT_above_shortintertext_sep=\dimen280
+\l_MT_below_shortintertext_sep=\dimen281
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count292
+\l__pdf_internal_box=\box62
+) (/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/poznamky.aux)
+\openout1 = `poznamky.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count293
+\scratchdimen=\dimen282
+\scratchbox=\box63
+\nofMPsegments=\count294
+\nofMParguments=\count295
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count296
+\MPscratchDim=\dimen283
+\MPnumerator=\count297
+\makeMPintoPDFobject=\count298
+\everyMPtoPDFconversion=\toks47
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includefoot 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 652.70622pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=622.70622pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<E_0.png, id=4, 433.62pt x 289.08pt>
+File: E_0.png Graphic file (type png)
+<use E_0.png>
+Package pdftex.def Info: E_0.png  used on input line 100.
+(pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<E_0.25.png, id=20, 433.62pt x 289.08pt>
+File: E_0.25.png Graphic file (type png)
+<use E_0.25.png>
+Package pdftex.def Info: E_0.25.png  used on input line 111.
+(pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
+ [2 </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/E_0.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/E_0.25.png>]
+<Escale0.png, id=26, 433.62pt x 289.08pt>
+File: Escale0.png Graphic file (type png)
+<use Escale0.png>
+Package pdftex.def Info: Escale0.png  used on input line 132.
+(pdftex.def)             Requested size: 236.01561pt x 157.34477pt.
+<Escale0smooth.png, id=27, 433.62pt x 289.08pt>
+File: Escale0smooth.png Graphic file (type png)
+<use Escale0smooth.png>
+Package pdftex.def Info: Escale0smooth.png  used on input line 138.
+(pdftex.def)             Requested size: 236.01561pt x 157.34477pt.
+<Escale0.25.png, id=28, 433.62pt x 289.08pt>
+File: Escale0.25.png Graphic file (type png)
+<use Escale0.25.png>
+Package pdftex.def Info: Escale0.25.png  used on input line 151.
+(pdftex.def)             Requested size: 236.01561pt x 157.34477pt.
+<Escale0.25smooth.png, id=29, 433.62pt x 289.08pt>
+File: Escale0.25smooth.png Graphic file (type png)
+<use Escale0.25smooth.png>
+Package pdftex.def Info: Escale0.25smooth.png  used on input line 157.
+(pdftex.def)             Requested size: 236.01561pt x 157.34477pt.
+ [3 </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/Escale0.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/Escale0smooth.png>]
+<Mean 0.png, id=35, 827.09pt x 519.9425pt>
+File: Mean 0.png Graphic file (type png)
+<use Mean 0.png>
+Package pdftex.def Info: Mean 0.png  used on input line 172.
+(pdftex.def)             Requested size: 341.43306pt x 214.6376pt.
+ [4 </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/Escale0.25.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/Escale0.25smooth.png>]
+<Mean 0.03.png, id=41, 782.925pt x 501.875pt>
+File: Mean 0.03.png Graphic file (type png)
+<use Mean 0.03.png>
+Package pdftex.def Info: Mean 0.03.png  used on input line 181.
+(pdftex.def)             Requested size: 341.43306pt x 218.86523pt.
+<Mean 10.png, id=42, 842.14626pt x 526.96875pt>
+File: Mean 10.png Graphic file (type png)
+<use Mean 10.png>
+Package pdftex.def Info: Mean 10.png  used on input line 190.
+(pdftex.def)             Requested size: 341.43306pt x 213.65436pt.
+ [5 </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/Mean 0.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/Mean 0.03.png>]
+<HM0.png, id=48, 433.62pt x 289.08pt>
+File: HM0.png Graphic file (type png)
+<use HM0.png>
+Package pdftex.def Info: HM0.png  used on input line 221.
+(pdftex.def)             Requested size: 236.01561pt x 157.34477pt.
+<HM0.03.png, id=49, 433.62pt x 289.08pt>
+File: HM0.03.png Graphic file (type png)
+<use HM0.03.png>
+Package pdftex.def Info: HM0.03.png  used on input line 226.
+(pdftex.def)             Requested size: 236.01561pt x 157.34477pt.
+ [6 </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/Mean 10.png>]
+<HMD0.png, id=54, 433.62pt x 289.08pt>
+File: HMD0.png Graphic file (type png)
+<use HMD0.png>
+Package pdftex.def Info: HMD0.png  used on input line 237.
+(pdftex.def)             Requested size: 236.01561pt x 157.34477pt.
+<HMD0.03.png, id=55, 433.62pt x 289.08pt>
+File: HMD0.03.png Graphic file (type png)
+<use HMD0.03.png>
+Package pdftex.def Info: HMD0.03.png  used on input line 242.
+(pdftex.def)             Requested size: 236.01561pt x 157.34477pt.
+
+Overfull \hbox (1.28087pt too wide) in paragraph at lines 251--254
+[]\OT1/cmr/m/n/10 Ve fockovsk^^Se b^^Sazi vid^^S^^Pme lo-ka-li-zo-van^^Se ob-lasti s vy-sok^^Symi a n^^S^^Pzk^^Symi hod-no-tami obou uka-za-tel^^Wu. U n^^Tekter^^Sych
+ []
+
+<1.png, id=56, 433.62pt x 289.08pt>
+File: 1.png Graphic file (type png)
+<use 1.png>
+Package pdftex.def Info: 1.png  used on input line 258.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<2.png, id=57, 433.62pt x 289.08pt>
+File: 2.png Graphic file (type png)
+<use 2.png>
+Package pdftex.def Info: 2.png  used on input line 264.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<3.png, id=58, 433.62pt x 289.08pt>
+File: 3.png Graphic file (type png)
+<use 3.png>
+Package pdftex.def Info: 3.png  used on input line 271.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<4.png, id=59, 433.62pt x 289.08pt>
+File: 4.png Graphic file (type png)
+<use 4.png>
+Package pdftex.def Info: 4.png  used on input line 278.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<5.png, id=60, 433.62pt x 289.08pt>
+File: 5.png Graphic file (type png)
+<use 5.png>
+Package pdftex.def Info: 5.png  used on input line 285.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<6.png, id=61, 433.62pt x 289.08pt>
+File: 6.png Graphic file (type png)
+<use 6.png>
+Package pdftex.def Info: 6.png  used on input line 292.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+[7 </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/HM0.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/HM0.03.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/HMD0.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/HMD0.03.png>]
+<HM1.png, id=70, 433.62pt x 289.08pt>
+File: HM1.png Graphic file (type png)
+<use HM1.png>
+Package pdftex.def Info: HM1.png  used on input line 308.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<HM2.png, id=71, 433.62pt x 289.08pt>
+File: HM2.png Graphic file (type png)
+<use HM2.png>
+Package pdftex.def Info: HM2.png  used on input line 314.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<HM3.png, id=72, 433.62pt x 289.08pt>
+File: HM3.png Graphic file (type png)
+<use HM3.png>
+Package pdftex.def Info: HM3.png  used on input line 321.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<HM4.png, id=73, 433.62pt x 289.08pt>
+File: HM4.png Graphic file (type png)
+<use HM4.png>
+Package pdftex.def Info: HM4.png  used on input line 328.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<HM5.png, id=74, 433.62pt x 289.08pt>
+File: HM5.png Graphic file (type png)
+<use HM5.png>
+Package pdftex.def Info: HM5.png  used on input line 335.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<HM6.png, id=75, 433.62pt x 289.08pt>
+File: HM6.png Graphic file (type png)
+<use HM6.png>
+Package pdftex.def Info: HM6.png  used on input line 342.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+ [8 </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/1.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/2.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/3.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/4.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/5.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/6.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/HM1.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/HM2.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/HM3.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/HM4.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/HM5.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/HM6.png>]
+<nW0.png, id=93, 433.62pt x 289.08pt>
+File: nW0.png Graphic file (type png)
+<use nW0.png>
+Package pdftex.def Info: nW0.png  used on input line 363.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<nW0.01.png, id=94, 433.62pt x 289.08pt>
+File: nW0.01.png Graphic file (type png)
+<use nW0.01.png>
+Package pdftex.def Info: nW0.01.png  used on input line 369.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<nW0.02.png, id=95, 433.62pt x 289.08pt>
+File: nW0.02.png Graphic file (type png)
+<use nW0.02.png>
+Package pdftex.def Info: nW0.02.png  used on input line 376.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<nW0.03.png, id=96, 433.62pt x 289.08pt>
+File: nW0.03.png Graphic file (type png)
+<use nW0.03.png>
+Package pdftex.def Info: nW0.03.png  used on input line 382.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<nW0.04.png, id=97, 433.62pt x 289.08pt>
+File: nW0.04.png Graphic file (type png)
+<use nW0.04.png>
+Package pdftex.def Info: nW0.04.png  used on input line 387.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<nW0.1.png, id=98, 433.62pt x 289.08pt>
+File: nW0.1.png Graphic file (type png)
+<use nW0.1.png>
+Package pdftex.def Info: nW0.1.png  used on input line 392.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<nW0.2.png, id=99, 433.62pt x 289.08pt>
+File: nW0.2.png Graphic file (type png)
+<use nW0.2.png>
+Package pdftex.def Info: nW0.2.png  used on input line 398.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<nW0.3.png, id=100, 433.62pt x 289.08pt>
+File: nW0.3.png Graphic file (type png)
+<use nW0.3.png>
+Package pdftex.def Info: nW0.3.png  used on input line 403.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<nW0.4.png, id=101, 433.62pt x 289.08pt>
+File: nW0.4.png Graphic file (type png)
+<use nW0.4.png>
+Package pdftex.def Info: nW0.4.png  used on input line 408.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+<nW0.5.png, id=102, 433.62pt x 289.08pt>
+File: nW0.5.png Graphic file (type png)
+<use nW0.5.png>
+Package pdftex.def Info: nW0.5.png  used on input line 414.
+(pdftex.def)             Requested size: 155.77116pt x 103.84816pt.
+ [9 </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/nW0.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/nW0.01.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/nW0.02.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/nW0.03.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/nW0.04.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/nW0.1.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/nW0.2.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/nW0.3.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/nW0.4.png> </home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/nW0.5.png>] (/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/poznamky.aux) ) 
+Here is how much of TeX's memory you used:
+ 16361 strings out of 482050
+ 308531 string characters out of 5934590
+ 543810 words of memory out of 5000000
+ 31351 multiletter control sequences out of 15000+600000
+ 538657 words of font info for 49 fonts, out of 8000000 for 9000
+ 473 hyphenation exceptions out of 8191
+ 52i,9n,56p,532b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "/home/jakub/Julia/Bc/Github/Chaos-in-Vibron-model/Quantum chaos/Notes/6/poznamky.pdf" (9 pages, 879562 bytes).
+PDF statistics:
+ 152 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
+

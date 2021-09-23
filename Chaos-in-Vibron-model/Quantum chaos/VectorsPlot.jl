@@ -13,8 +13,8 @@ include("SpectrumFunctions.jl")
 include("ChaosIndicators.jl")
 
 
-ξ = 0.5
-ϵ = 0.5
+ξ = 0.05
+ϵ = 0.05
 
 N = 4#10
 D =  Int((N + 1)*(N +2)/2) 

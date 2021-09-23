@@ -368,6 +368,110 @@ function Dp_Nnl(N::Int64)
     return Dp
 end
 
+function Qp_Nnl(N::Int64)
+    # |N n l> basis
+    Basis = Basis_Nnl(N)
+  
+
+    D = Int((N + 1)*(N +2)/2) 
+
+    Qp = zeros(Float64,D,D)
+    for i in 1:D
+        n,l = Int64(Basis[2,i]),Int64(Basis[3,i])  
+
+        if i + (n+2) <= D 
+            Qp[i,i+ (n+2)]= 1/2 * sqrt(n+l+2)
+            #println([[n,l],[Basis[2,i+n+1],Basis[3,i+n+2]]])
+        end
+        
+        if i - n >0
+            Qp[i,i - n] = -1/2 * sqrt(n-l)
+            #println([[n,l],[Basis[2,i-n],Basis[3,i-n]]])
+
+        end
+    end
+
+    return Qp
+end
+
+function Qm_Nnl(N::Int64)
+    # |N n l> basis
+    Basis = Basis_Nnl(N)
+  
+
+    D = Int((N + 1)*(N +2)/2) 
+
+    Qm = zeros(Float64,D,D)
+    for i in 1:D
+        n,l = Int64(Basis[2,i]),Int64(Basis[3,i])  
+
+        if i + (n+1) <= D 
+            Qm[i,i+ (n+1)]= 1/2 * sqrt(n-l+2)
+            #println([[n,l],[Basis[2,i+n+1],Basis[3,i+n+2]]])
+        end
+        
+        if i - n >1
+            Qm[i,i - n-1] = -1/2 * sqrt(n+l)
+            #println([[n,l],[Basis[2,i-n],Basis[3,i-n]]])
+
+        end
+    end
+
+    return Qm
+end
+
+function Pp_Nnl(N::Int64)
+    # |N n l> basis
+    Basis = Basis_Nnl(N)
+  
+
+    D = Int((N + 1)*(N +2)/2) 
+
+    Pp = zeros(ComplexF64,D,D)
+    for i in 1:D
+        n,l = Int64(Basis[2,i]),Int64(Basis[3,i])  
+
+        if i + (n+1) <= D 
+            Pp[i,i+ (n+1)]= -im/2 * sqrt(n-l+2)
+            #println([[n,l],[Basis[2,i+n+1],Basis[3,i+n+2]]])
+        end
+        
+        if i - n >1
+            Pp[i,i - n-1] = -im/2 * sqrt(n+l)
+            #println([[n,l],[Basis[2,i-n],Basis[3,i-n]]])
+
+        end
+    end
+
+    return Pp
+end
+
+function Pm_Nnl(N::Int64)
+    # |N n l> basis
+    Basis = Basis_Nnl(N)
+  
+
+    D = Int((N + 1)*(N +2)/2) 
+
+    Pm = zeros(ComplexF64,D,D)
+    for i in 1:D
+        n,l = Int64(Basis[2,i]),Int64(Basis[3,i])  
+
+        if i + (n+2) <= D 
+            Pm[i,i+ (n+2)]= -im/2 * sqrt(n+l+2)
+            #println([[n,l],[Basis[2,i+n+1],Basis[3,i+n+2]]])
+        end
+        
+        if i - n >0
+            Pm[i,i - n] = -im/2 * sqrt(n-l)
+            #println([[n,l],[Basis[2,i-n],Basis[3,i-n]]])
+
+        end
+    end
+
+    return Pm
+end
+
 function Rp_Nnl(N::Int64)
     # |N n l> basis
     Basis = Basis_Nnl(N)
