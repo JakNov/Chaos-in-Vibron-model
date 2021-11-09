@@ -8,6 +8,11 @@ using LinearAlgebra
 include("SpectrumFunctions.jl")
 include("OTOCs.jl")
 
+#
+#
+#   Plot více OTOCů zároveň
+#
+#
 
 ξ = 0.001
 ϵ = 0.0
@@ -20,7 +25,7 @@ N = 15
 println("Num of threads: $(Threads.nthreads())") #number of threads 
 
 
-len = Int64(5e4) #time
+len = Int64(1e3) #time
 
 
 @time otoc_nn = OTOCarray(ξ,ϵ,N,Vmatrix = "n",Wmatrix = "n", len = len)

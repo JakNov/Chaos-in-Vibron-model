@@ -839,7 +839,7 @@ function affect_norm!(integrator)
             Mean = mean(integrator.p[3])
             
             if abs(Var/Mean) < 1e-5 || abs(Mean) < 1e-5
-                return terminate!(integrator) 
+                #return terminate!(integrator) 
             end
     
         else
@@ -974,7 +974,7 @@ function Lyapunov!(Point::Array{Float64},par::Array{Float64},x::Float64)
             Apx = [a[3] for a in solution.u]
             Apy = [a[4] for a in solution.u]
             if !isnan(lyapunov)
-                return [[Ax[ii],Ay[ii],Apx[ii],Apy[ii]] for ii in 1:length(Ax)],lyapunov
+                return solution.u, lyapunov#[[Ax[ii],Ay[ii],Apx[ii],Apy[ii]] for ii in 1:length(Ax)],lyapunov
             else 
                 return missing, missing
             end

@@ -8,8 +8,13 @@ include("SpectrumFunctions.jl")
 include("ChaosIndicators.jl")
 include("OTOCs.jl")
 
+#
+#
+#       Vibronový a BEC hamiltonián  - numericky získaná matice přechodu - problémy
+#
+#
 
-N = 50
+N = 30
 ξ = 0.2
 ϵ = 0.0
 

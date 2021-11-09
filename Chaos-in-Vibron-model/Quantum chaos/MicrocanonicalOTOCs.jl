@@ -21,7 +21,7 @@ function OTOCevaluation(W,V,t::Float64,spectrum::Array{Float64,1})
 end
 
 
-function OTOCgeneral(W, V, Hamiltonian; len::Int64 = 10000)
+function OTOCgeneral(W, V, Hamiltonian; len::Int64 = 30000)
     
 
     EigSystem = eigen(Hamiltonian)
@@ -55,7 +55,7 @@ function OTOCgeneral(W, V, Hamiltonian; len::Int64 = 10000)
             #println(sum(OTOCeig[i,:]))
         end
 
-    return OTOCarrayEnergyScale, OTOCarrayParticleScale
+    return OTOCarrayEnergyScale, OTOCarrayParticleScale, spectrum
 end
 
 function OscilationValue(signal::Array{Float64,1},name::String)
@@ -105,11 +105,24 @@ function OscilationValue(signal::Array{Float64,1},name::String)
     #   plot jednotlivých hladin
     #
 
-    #=p1 = plot(signal, title = name)
-    p2 = plot(dat, title = "$f")
-    plot(p1,p2,layout = (2,1))
+    MeanScale = mean(signal[end - Int64(2e4) : end])
+    VarScale = sqrt(var(signal[end - Int64(2e4) : end]))
 
-    savefig(name)=#
+    Indicator = VarScale/MeanScale
+
+    if Indicator > 0.0
+        p1 = plot(signal, title = name)
+        p1 = plot!([MeanScale for i in 1:3e4])
+        p1 = plot!([MeanScale + VarScale for i in 1:3e4])
+        p1 = plot!([MeanScale - VarScale for i in 1:3e4])
+
+        p2 = plot(dat, title = "$Indicator")
+        plot(p1,p2,layout = (2,1))
+
+        savefig(name)
+    end 
+
+
     return log(1/f)
 end
 
@@ -136,31 +149,40 @@ pyplot()
 H = Hamiltonian_Nnl(ξ,ϵ,N)
 #otE, otP = OTOCgeneral(n, W2, H)
 #otE, otP = OTOCgeneral(np, nm, H)
-otE, otP = OTOCgeneral(Qp, Pp, H)
-
+otE, otP, spectrum = OTOCgeneral(n, W2, H)
+name = "[n(t),W2]"
 #otE, otP = OTOCgeneral(np, np, H)
 
 
 dim = Int64((N+1)*(N+2)/2)
 makingpictures = [OscilationValue(otE[:,i],"EnergyScale chi=$ξ eps=$ϵ N=$N $i") for i in 1:dim]
 plot(makingpictures)
-savefig("EnergyScale Qp(t)Pp chi=$ξ eps=$ϵ N=$N")
+savefig("EnergyScale $name chi=$ξ eps=$ϵ N=$N")
 
-MeanScale = [mean(otE[end - Int64(1e3) : end,i]) for i in 1:dim]
-VarScale = [sqrt(var(otE[end - Int64(1e3) : end,i])) for i in 1:dim]
+MeanScale = [mean(otE[end - Int64(5e3) : end,i]) for i in 1:dim]
+VarScale = [sqrt(var(otE[end - Int64(5e3) : end,i])) for i in 1:dim]
 
+Indicator = [VarScale[i]/MeanScale[i] for i in 1:dim]
+
+
+#=
 plotly()
 scatter(MeanScale,yerror=VarScale)
 savefig("MeanScaleScatter Qp(t)Pp chi=$ξ eps=$ϵ N=$N")
+=#
+
+pyplot()
+plot(Indicator)
+savefig("EnergyScale VarMean $name chi=$ξ eps=$ϵ N=$N")
 
 pyplot()
 smooth = [sum(makingpictures[i:i+10])/10 for i in 1:dim-10]
 plot(smooth)
-savefig("EnergyScale Qp(t)Pp smooth10 chi=$ξ eps=$ϵ N=$N")
+savefig("EnergyScale $name smooth10 chi=$ξ eps=$ϵ N=$N")
 
 makingpictures = [OscilationValue(otP[:,i],"ParticleScale chi=$ξ eps=$ϵ N=$N $i") for i in 1:dim]
 plot(makingpictures)
-savefig("ParticleScale Qp(t)Pp chi=$ξ eps=$ϵ N=$N")
+savefig("ParticleScale $name chi=$ξ eps=$ϵ N=$N")
 
 BasisNnl = BasisList_Nnl(N)
 Particles = zeros(Float64, N+1, N+1)
@@ -170,17 +192,20 @@ for i in 1:dim
     np = (vec[2]+vec[3])/2 +1
     nm = (vec[2]-vec[3])/2 +1
     Particles[Int64(np),Int64(nm)] = makingpictures[i]
-    println([np,nm])
+    #println([np,nm])
 end
 
 heatmap(Particles)
-savefig("ParticleScale Qp(t)Pp heatmap chi=$ξ eps=$ϵ N=$N")
+savefig("ParticleScale $name heatmap chi=$ξ eps=$ϵ N=$N")
 
-MeanScale = [mean(otP[end - Int64(1e3) : end,i]) for i in 1:dim]
-VarScale = [sqrt(var(otP[end - Int64(1e3) : end,i])) for i in 1:dim]
+MeanScale = [mean(otP[end - Int64(5e3) : end,i]) for i in 1:dim]
+VarScale = [sqrt(var(otP[end - Int64(5e3) : end,i])) for i in 1:dim]
+
+Indicator = [VarScale[i]/MeanScale[i] for i in 1:dim]
 
 ParticlesMean = zeros(Float64, N+1, N+1)
 ParticlesVar = zeros(Float64, N+1, N+1)
+ParticlesVarMean = zeros(Float64, N+1, N+1)
 
 for i in 1:dim
     vec = BasisNnl[i]
@@ -189,19 +214,31 @@ for i in 1:dim
     nm = (vec[2]-vec[3])/2 +1
     ParticlesMean[Int64(np),Int64(nm)] = MeanScale[i]
     ParticlesVar[Int64(np),Int64(nm)] = VarScale[i]
+    ParticlesVarMean[Int64(np),Int64(nm)] = Indicator[i]
     println([np,nm])
 end
 
 heatmap(ParticlesMean)
-savefig("ParticleMean Qp(t)Pp heatmap chi=$ξ eps=$ϵ N=$N")
+savefig("ParticleMean $name heatmap chi=$ξ eps=$ϵ N=$N")
 
 heatmap(ParticlesVar)
-savefig("ParticleVar Qp(t)Pp heatmap chi=$ξ eps=$ϵ N=$N")
+savefig("ParticleVar $name heatmap chi=$ξ eps=$ϵ N=$N")
+
+heatmap(ParticlesVarMean)
+savefig("ParticleVarMean $name heatmap chi=$ξ eps=$ϵ N=$N")
 end
 
 #SetOTOC(5,0.75,0.06)
 
-SetOTOC(30,0.75,0.0)
+#SetOTOC(15,0.25,0.0)
+#SetOTOC(15,0.25,0.1)
+#SetOTOC(15,0.25,0.2)
+#SetOTOC(15,0.25,0.3)
+#SetOTOC(15,0.25,0.4)
+#SetOTOC(15,0.25,0.5)
+
+
+
 #SetOTOC(15,0.75,0.005)
 #SetOTOC(30,0.75,0.1)
 #SetOTOC(30,0.75,0.2)
@@ -213,7 +250,119 @@ SetOTOC(30,0.75,0.0)
 #SetOTOC(30,0.75,0.8)
 
 
+function SetOTOCenergy(N::Int64,ξ::Float64,ϵ::Float64)
 
+    W2 = W2_Nnl(N)
+    n = n_Nnl(N)
+    l = l_Nnl(N)
+    Dx = (Dp_Nnl(N) + Dm_Nnl(N))/2   
+    np = (n + l)/2
+    nm = (n - l)/2
+    
+    Qp = Qp_Nnl(N)
+    Qm = Qm_Nnl(N)
+    
+    Pp = Pp_Nnl(N)
+    Pm = Pm_Nnl(N)
+    
+    
+    
+    pyplot()
+
+    qa = -sqrt(2)*(Qp - Qm)
+    pa = -sqrt(2)*(Pp - Pm)
+    
+    H = Hamiltonian_Nnl(ξ,ϵ,N)
+    #otE, otP = OTOCgeneral(n, W2, H)
+    #otE, otP = OTOCgeneral(np, nm, H)
+
+    otE, otP, spectrum = OTOCgeneral(qa, pa, H)
+    name = "[n(t),W2]"
+    name = "[Qa(t),Pa]"
+
+
+
+    #otE, otP = OTOCgeneral(np, np, H)
+    
+    
+    dim = Int64((N+1)*(N+2)/2)
+    makingpictures = [OscilationValue(otE[:,i],"EnergyScale chi=$ξ eps=$ϵ N=$N $i") for i in 1:dim]
+    plot(makingpictures)
+    savefig("EnergyScale $name chi=$ξ eps=$ϵ N=$N")
+    
+    MeanScale = [mean(otE[end - Int64(2e4) : end,i]) for i in 1:dim]
+    VarScale = [sqrt(var(otE[end - Int64(2e4) : end,i])) for i in 1:dim]
+    
+    IndicatorE = [VarScale[i]/MeanScale[i] for i in 1:dim]
+    
+    
+    #=
+    plotly()
+    scatter(MeanScale,yerror=VarScale)
+    savefig("MeanScaleScatter Qp(t)Pp chi=$ξ eps=$ϵ N=$N")
+    =#
+    #=
+    pyplot()
+    plot(IndicatorE)
+    savefig("EnergyScale VarMean $name chi=$ξ eps=$ϵ N=$N")
+    
+    pyplot()
+    smooth = [sum(makingpictures[i:i+10])/10 for i in 1:dim-10]
+    plot(smooth)
+    savefig("EnergyScale $name smooth10 chi=$ξ eps=$ϵ N=$N")=#
+    
+    makingpictures = [OscilationValue(otP[:,i],"ParticleScale chi=$ξ eps=$ϵ N=$N $i") for i in 1:dim]
+    #plot(makingpictures)
+    #savefig("ParticleScale $name chi=$ξ eps=$ϵ N=$N")
+    
+    BasisNnl = BasisList_Nnl(N)
+    Particles = zeros(Float64, N+1, N+1)
+    for i in 1:dim
+        vec = BasisNnl[i]
+        println(vec)
+        np = (vec[2]+vec[3])/2 +1
+        nm = (vec[2]-vec[3])/2 +1
+        Particles[Int64(np),Int64(nm)] = makingpictures[i]
+        #println([np,nm])
+    end
+    #=
+    heatmap(Particles)
+    savefig("ParticleScale $name heatmap chi=$ξ eps=$ϵ N=$N")=#
+    
+    MeanScale = [mean(otP[end - Int64(2e4) : end,i]) for i in 1:dim]
+    VarScale = [sqrt(var(otP[end - Int64(2e4) : end,i])) for i in 1:dim]
+    
+    Indicator = [VarScale[i]/MeanScale[i] for i in 1:dim]
+    
+    ParticlesMean = zeros(Float64, N+1, N+1)
+    ParticlesVar = zeros(Float64, N+1, N+1)
+    ParticlesVarMean = zeros(Float64, N+1, N+1)
+    
+    for i in 1:dim
+        vec = BasisNnl[i]
+        println(vec)
+        np = (vec[2]+vec[3])/2 +1
+        nm = (vec[2]-vec[3])/2 +1
+        ParticlesMean[Int64(np),Int64(nm)] = MeanScale[i]
+        ParticlesVar[Int64(np),Int64(nm)] = VarScale[i]
+        ParticlesVarMean[Int64(np),Int64(nm)] = Indicator[i]
+        println([np,nm])
+    end
+    #=
+    heatmap(ParticlesMean)
+    savefig("ParticleMean $name heatmap chi=$ξ eps=$ϵ N=$N")
+    
+    heatmap(ParticlesVar)
+    savefig("ParticleVar $name heatmap chi=$ξ eps=$ϵ N=$N")
+    
+    heatmap(ParticlesVarMean)
+    savefig("ParticleVarMean $name heatmap chi=$ξ eps=$ϵ N=$N")
+=#
+    return spectrum, IndicatorE, makingpictures
+
+
+    end
+    
 
 
 

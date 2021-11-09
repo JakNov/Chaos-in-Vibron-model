@@ -640,7 +640,7 @@ function Hamiltonian_Nln(ξ::Float64,ϵ::Float64,N::Int64)
     return Symmetric(H_2)
 end
 
-function Dx_Nnl(ξ::Float64,ϵ::Float64,N::Int64)
+function Dx_Nnl(N::Int64)
     # |N n l> basis
     B1 = []
     for n in 0:N
@@ -657,12 +657,12 @@ function Dx_Nnl(ξ::Float64,ϵ::Float64,N::Int64)
         n,l = Int64(B1[i][1]),Int64(B1[i][2])  
     
         if i + (n+2) <= D
-            H_1[i,i+ (n+2)]= -ϵ/2 *P1(N,n,l)
+            H_1[i,i+ (n+2)]= -1/2 *P1(N,n,l)
             H_1[i+ (n+2),i] = H_1[i,i+ (n+2)]
         end
     
         if i + (n+1) <= D
-            H_1[i,i+ (n+1)] = -ϵ/2 *M1(N,n,l)
+            H_1[i,i+ (n+1)] = -1/2 *M1(N,n,l)
             H_1[i+ (n+1),i] = H_1[i,i+ (n+1)]
         end
     
@@ -671,7 +671,7 @@ function Dx_Nnl(ξ::Float64,ϵ::Float64,N::Int64)
     return H_1
 end
 
-function Dx_Nln(ξ::Float64,ϵ::Float64,N::Int64)
+function Dx_Nln(N::Int64)
     # |N l n> basis
 
     B2 = []
@@ -697,20 +697,20 @@ function Dx_Nln(ξ::Float64,ϵ::Float64,N::Int64)
         
         if i+ num_l <= D && n < N
             if l <0
-                H_2[i,i+num_l+1] = -ϵ/2 *P1(N,n,l)
+                H_2[i,i+num_l+1] = -1/2 *P1(N,n,l)
                 H_2[i+num_l+1,i] = H_2[i,i+num_l+1]
             else
-                H_2[i,i+num_l] = -ϵ/2 *P1(N,n,l)
+                H_2[i,i+num_l] = -1/2 *P1(N,n,l)
                 H_2[i+num_l,i] = H_2[i,i+num_l]
             end
         end
     
         if i+ num_l-1 <= D
             if l <0
-                H_2[i,i+num_l] = +ϵ/2 *P2(N,n,l)
+                H_2[i,i+num_l] = +1/2 *P2(N,n,l)
                 H_2[i+num_l,i] = H_2[i,i+num_l]
             elseif  n != abs(l)
-                H_2[i,i+num_l-1] = +ϵ/2 *P2(N,n,l)
+                H_2[i,i+num_l-1] = +1/2 *P2(N,n,l)
                 H_2[i+num_l-1,i] = H_2[i,i+num_l-1]
             end
         end

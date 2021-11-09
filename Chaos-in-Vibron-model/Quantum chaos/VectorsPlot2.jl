@@ -7,6 +7,7 @@ using LinearAlgebra
 #
 #   Jak vypadají vlastní báze hamiltoniánů - míchání podprostorů n a j 
 #
+#   plot lokalizace vlastnch stavů H v původní bázi - graf pro každou hladinu zvlášť
 #
 
 include("SpectrumFunctions.jl")

@@ -8,6 +8,11 @@ include("SpectrumFunctions.jl")
 include("ChaosIndicators.jl")
 include("OTOCs.jl")
 
+#
+#
+#   Jak se liší vibronový a BEC hamiltonián - analytický předpis pro matici přechodu - numericky OK
+#
+#
 
 N = 10
 ξ = 0.2
